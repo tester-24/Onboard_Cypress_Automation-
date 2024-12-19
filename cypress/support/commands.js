@@ -44,6 +44,7 @@ Cypress.Commands.add('Loginflow',() => {
     cy.get('#LoginPassword').type('Twinkle@07')
     cy.wait(1000)
     cy.get('.login_button_wrap').click({ force: true });
+    cy.wait(1000)
     cy.get('[tabindex="1"]').type(1)
     cy.get('[tabindex="2"]').type(2)
     cy.get('[tabindex="3"]').type(3)
