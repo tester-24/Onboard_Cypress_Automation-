@@ -45,7 +45,7 @@ Cypress.Commands.add('Loginflow',() => {
 
     cy.wait(1000)
     cy.get('.login-space-btn').click({force:true})
-    cy.wait(2000)
+    cy.wait(4000)
     // enter the user id
     cy.xpath('/html[1]/body[1]/app-root[1]/app-sign-in[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/kendo-textbox[1]/input[1]').type(539)
     //click on continue button
