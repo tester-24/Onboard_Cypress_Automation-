@@ -75,7 +75,7 @@ describe('Onboard', () => {
          cy.xpath('/html/body/app-root/app-dashboard/div/main/div/app-clientsdetails/div[2]/div/div[1]/div[2]/div[1]/div/label/kendo-daterange/kendo-dateinput[1]').clear().type("12/05/2023")
          cy.xpath('/html/body/app-root/app-dashboard/div/main/div/app-clientsdetails/div[2]/div/div[1]/div[2]/div[1]/div/label/kendo-daterange/kendo-dateinput[2]').clear().type("07/08/2024") 
         //click on MOD
-        cy.get(':nth-child(3) > :nth-child(3) > .slds-checkbox_button-group').click()
+        cy.get(':nth-child(3) > :nth-child(3) > .slds-checkbox_button-group').click({force:true})
         //click on MANUAL
         cy.get(':nth-child(4) > :nth-child(3) > .slds-checkbox_button-group').click({force:true})
         //click on YESTERDAY
