@@ -42,7 +42,7 @@ describe('Onboard', () => {
        //click on calender
        cy.wait(1000)
        cy.xpath('/html/body/app-root/app-dashboard/div/main/div/app-clientsdetails/div[2]/div/div[1]/div[2]/div[1]/div/label/kendo-daterange').click({force:true})
-      cy.wait(500)
+      cy.wait(1000)
        cy.xpath('/html/body/app-root/app-dashboard/div/main/div/app-clientsdetails/div[2]/div/div[1]/div[2]/div[1]/div/label/kendo-daterange/kendo-dateinput[1]').clear().type("12/05/2023")
        cy.xpath('/html/body/app-root/app-dashboard/div/main/div/app-clientsdetails/div[2]/div/div[1]/div[2]/div[1]/div/label/kendo-daterange/kendo-dateinput[2]').clear().type("07/08/2024") 
        //click on AOF
