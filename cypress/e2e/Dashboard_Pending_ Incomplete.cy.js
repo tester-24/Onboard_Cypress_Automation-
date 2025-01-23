@@ -30,7 +30,7 @@ describe('Onboard', () => {
             cy.Loginflow()
             // click on incomplete
            cy.get('.client-gust-ob1 > :nth-child(2) > .slds-checkbox_button-group').click()
-         cy.xpath('/html/body/app-root/app-dashboard/div/main/div/app-clientsurcgenerated/div[2]/div/div[1]/div[2]/div[1]/div/label/kendo-daterange').click()
+         cy.xpath('/html/body/app-root/app-dashboard/div/main/div/app-clientsurcgenerated/div[2]/div/div[1]/div[2]/div[1]/div/label/kendo-daterange').click({force:true})
           cy.xpath('/html/body/app-root/app-dashboard/div/main/div/app-clientsurcgenerated/div[2]/div/div[1]/div[2]/div[1]/div/label/kendo-daterange/kendo-dateinput[1]/span/input').clear().type("12/05/2023")
           // select second calender
           cy.xpath('/html/body/app-root/app-dashboard/div/main/div/app-clientsurcgenerated/div[2]/div/div[1]/div[2]/div[1]/div/label/kendo-daterange/kendo-dateinput[2]/span/input').clear().type("07/08/2024")
